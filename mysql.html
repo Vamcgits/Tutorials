@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Basics Tutorial</title>
+    <link rel="stylesheet" href="CSS/mysql.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the MySQL Basics Tutorial</h1>
+        <p>Learn the fundamentals of MySQL, a popular relational database management system.</p>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction to MySQL</h2>
+        <p>
+            MySQL is an open-source relational database management system (RDBMS) that is widely used for managing and querying structured data. It is known for its performance, reliability, and scalability.
+        </p>
+    </section>
+
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>
+            Before you start working with MySQL, you need to install it on your system. Visit the official MySQL website for installation instructions.
+        </p>
+    </section>
+
+    <section id="connecting">
+        <h2>Connecting to MySQL</h2>
+        <p>
+            You can connect to MySQL using various clients and programming languages. Below is an example of connecting to MySQL using Python:
+        </p>
+        <pre>
+            <code class="language-python">
+                import mysql.connector
+
+                # Establish a connection
+                connection = mysql.connector.connect(
+                    host="localhost",
+                    user="your_username",
+                    password="your_password",
+                    database="your_database"
+                )
+
+                # Create a cursor object
+                cursor = connection.cursor()
+
+                # Perform database operations
+                # ...
+
+                # Close the cursor and connection
+                cursor.close()
+                connection.close()
+            </code>
+        </pre>
+    </section>
+
+    <section id="queries">
+        <h2>Basic SQL Queries</h2>
+        <p>
+            Here are some basic SQL queries to get you started:
+        </p>
+        <pre>
+            <code class="language-sql">
+                -- Create a new database
+                CREATE DATABASE mydatabase;
+
+                -- Use a database
+                USE mydatabase;
+
+                -- Create a table
+                CREATE TABLE users (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    username VARCHAR(50),
+                    email VARCHAR(100)
+                );
+
+                -- Insert data
+                INSERT INTO users (username, email) VALUES ('john_doe', 'john@example.com');
+
+                -- Select data
+                SELECT * FROM users;
+
+                -- Update data
+                UPDATE users SET email='johndoe@example.com' WHERE id=1;
+
+                -- Delete data
+                DELETE FROM users WHERE id=1;
+            </code>
+        </pre>
+    </section>
+
+    <footer>
+        &copy; 2023 MySQL Tutorial
+    </footer>
+</body>
+
+</html>

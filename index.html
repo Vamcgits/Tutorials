@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Bar</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+        }
+        
+        .navbar {
+            background: crimson;
+            font-family: calibri;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo a {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+        
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+        
+        li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        
+        button {
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+        
+        button a {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        /* style.css */
+        
+        .footer {
+            background-color: #a5e558;
+            /* Set the background color */
+            color: #050000;
+            /* Set text color */
+            padding: 50px 0;
+            /* Add some padding to top and bottom */
+        }
+        
+        .footer p {
+            margin-bottom: 0;
+            /* Remove default margin for <p> elements */
+        }
+        
+        body {
+            background-color: rgb(248, 177, 142);
+        }
+        
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 100px;
+        }
+        
+        .marquee-content {
+            display: inline-block;
+            height: 200px;
+            width: 20%;
+            animation: marquee 15s linear infinite;
+            /* Adjust animation duration as needed */
+        }
+        /* Keyframes for the marquee animation */
+        
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="Home.html">Tutorials</a> </div>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a href="python.html">Python</a></li>
+                <li><a href="c.html">C</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="csha.html">C#</a></li>
+                <li><a href="sql.html">SQL</a></li>
+                <li><a href="mysql.html">MYSQL</a></li>
+                <li><a href="hcs.html">HTML</a></li>
+                <li><a href="hcs.html">CSS</a></li>
+                <li><a href="hcs.html">BootStap</a></li>
+                <li><a href="hcs.html">JavaScript</a></li>
+                <li><a href="R.html">R</a></li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button><a href="login.html">SignIn</a></button>
+                <button><a href="registration_form.html">SignUp</a></button>
+            </ul>
+        </div>
+    </nav>
+    <center> <b>***Available courses are in 35% discount***</b>></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <img src="images/python.png" alt="Python" class="img-fluid" height="100%" width="100%">
+                        <center><span><b><a href="python.html ">Python</a></b></span></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <img src="images/java.png" alt="Java " class="img-fluid " height="100%" width="100%">
+                        <center><span><b><a href="java.html ">JAVA</a></b></span></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <img src="images/Cplus.jpeg" alt="c++ " class="img-fluid " height="100%" width="100%">
+                        <center><b><span><a href="c++.html ">C++</a></span></b></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <img src="images/C.png" alt="c " class="img-fluid " height="100%" width="100%">
+                        <center><b><span><a href="c.html ">C</a></span></b></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <a href="R.html "><img src="images/R.jpeg" alt="R programming language " class="img-fluid " height="100%" width="100%"></a>
+                        <center><b><span>R programming</span></b></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <a href="mysql.html "><img src="images/mysql.jpeg" alt="mysql " class="img-fluid " height="100%" width="100%"></a>
+                        <center><b><span>MYSQL</span></b></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <a href="hcs.html "><img src="images/hcj.jpeg" alt="html,css,javascript " class="img-fluid " height="100%" width="100%"></a>
+                        <center><b><span>HTML,CSS,JAVA SCRIPT</span></b></center>
+                    </div>
+                    <div class="marquee-content ">
+                        <a href="csha.html "><img src="images/C.png" alt="c# " class="img-fluid " height="100%" width="100%"></a>
+                        <center><b><span>C#</span></b></center>
+                    </div>
+                    <!-- Add more images and names as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Unlock Your Learning Potential</h1>
+    <p>Welcome to online Tutorial Platform, where the pursuit of knowledge meets the power of convenience. Whether you're a seasoned expert looking to refine your skills or a curious beginner eager to explore new horizons, our platform is designed to empower
+        you on your learning journey.</p><br>
+    <h1>What Makes Us Stand Out?</h1>
+    <h2>Diverse Learning Resources</h2><br>
+    <p>Explore an extensive library of tutorials, courses, and guides across a wide range of subjects. From programming to art, science to literature, and everything in between, we've got you covered.</p><br>
+    <h2>Expert Instructors</h2>
+    <br>
+    <p>Learn from the best in the field. Our instructors are industry experts, scholars, and practitioners who are passionate about sharing their knowledge with you.</p><br>
+    <h2>Flexible Learning</h2><br>
+    <p>Life is busy, but that shouldn't stop you from learning. With [Your Tutorial Platform], you can access content on your schedule, from anywhere in the world. Learn at your own pace and revisit materials as often as you like.</p><br>
+    <h2>Interactive Learning</h2><br>
+    <p>Engage with our interactive lessons, quizzes, and assignments. Gain hands-on experience and reinforce your understanding through practical exercises.</p><br>
+    <h2>Supportive Community</h2>
+    <p>Connect with a vibrant community of learners just like you. Share your insights, ask questions, and collaborate on projects to enhance your learning experience.</p>
+    <h2><b>Getting Started</b></h2>
+    <p>
+        <b>Browse Our Courses:</b> Start by exploring our catalog of courses. Find the perfect learning path that aligns with your goals and interests.<br>
+
+        <b>Create an Account:</b> Join our community by creating a free account. This will enable you to save your progress, participate in discussions, and track your achievements.<br>
+        <b>Enroll in a Course:</b> Once you've found a course that excites you, enroll and begin your learning journey.<br>
+
+        <b>Learn, Grow, Succeed:</b> Dive into your chosen course, complete assignments, and interact with fellow learners and instructors. Watch your knowledge and skills flourish.<br>
+    </p>
+    <h2><b>Join Our Learning Revolution</b></h2>
+    <p>
+        At this Tutorial Platform, we believe that learning is a lifelong endeavor. Our mission is to make high-quality education accessible to everyone. Whether you're looking to advance your career, satisfy your curiosity, or just enjoy the thrill of learning
+        something new, we're here to support you every step of the way.
+        <br> Are you ready to embark on an enriching learning adventure? Start exploring our tutorials and courses today, and unlock a world of possibilities!
+    </p>
+
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <b><center><p>&copy; 2023 BlackBucks Tutorials. All rights reserved.</p></center></b>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
